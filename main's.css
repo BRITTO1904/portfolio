@@ -1,0 +1,213 @@
+/* General Reset */
+body {
+  .resume-btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.resume-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background: #f9fafb;
+    color: #111827;
+  }
+  
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    margin: 0 0.5rem;
+    font-weight: 500;
+  }
+  
+  nav button {
+    background: #e5e7eb;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background: #d1d5db;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    display: inline-block;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  /* Sections */
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .skill-card {
+    background: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+    background: #dbeafe;
+  }
+  
+  /* Projects */
+  .project {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* Experience */
+  ul {
+    list-style: disc inside;
+    line-height: 1.8;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f3f4f6;
+    color: #6b7280;
+    margin-top: 2rem;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background: #111827;
+    color: #f3f4f6;
+  }
+  
+  .dark-mode header {
+    background: #1f2937;
+  }
+  
+  .dark-mode nav a {
+    color: #f3f4f6;
+  }
+  
+  .dark-mode .btn {
+    background: #3b82f6;
+  }
+  
+  .dark-mode .btn:hover {
+    background: #2563eb;
+  }
+  
+  .dark-mode .skill-card {
+    background: #1f2937;
+    color: #f3f4f6;
+  }
+  
+  .dark-mode .skill-card:hover {
+    background: #374151;
+  }
+  
+  .dark-mode .project {
+    background: #1f2937;
+    color: #f3f4f6;
+  }
+  
+  .dark-mode footer {
+    background: #1f2937;
+    color: #9ca3af;
+  }
+  

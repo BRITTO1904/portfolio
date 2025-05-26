@@ -1,114 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Britto A | Portfolio</title>
-  <link rel="stylesheet" href="main's.css">
-  <script src="main.js"></script>
-
-</head>
-<body id="body">
-
-  <!-- Header -->
-   
-  <header>
-    <div class="container header">
-      <h1>Britto A</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <a href="britto.cv.pdf" download class="resume-btn">⬇ Resume</a>
-        <button onclick="toggleDarkMode()">🌓</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body id="body">
+      <nav id="desktop-nav">
+          <div class="logo"><b>BRITTO A</b></div>
+          <div>
+              <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Work History</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#cert">Certification</a></li>                 
+                  <li><a href="#hobbies">Hobbies</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <button onclick="toggleDarkMode()">🌓</button>
+              </ul>
+          </div>
       </nav>
-    </div>
-  </header>
+      <nav id="hamburger-nav">
+          <div class="logo" >Britto</div>
+          <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <div class="menu-links">
+                  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                  <li><a href="#experience" onclick="toggleMenu()">Work History</a></li>
+                  <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                  <li><a href="#cert" onclick="toggleMenu()">Certification</a></li>
+                  <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+          </div>
+      </nav>
+      <section id="profile">
+          <div class="section__pic-container">
+              <img src="IMG_3543.PNG" alt="Britto profile picture" />
+          </div>
+          <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Britto</h1>
+              <p class="section__text__p2">DotNet FullStack Developer</p>
+              <div class="btn-container">
+                  <button class="btn btn-color-2"
+                          onclick="window.open('./assets/resume-example.pdf')">
+                      Download Resume
+                  </button>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Electronics & Communication Student</h2>
-    <p>Aspiring Software Developer | Passion for Problem Solving & Innovation</p>
-    <a href="#contact" class="btn">Let’s Connect</a>
-  </section>
+              </div>
+              <div id="socials-container">
+                  <img src="./assets/linkedin.png"
+                       alt="My LinkedIn profile"
+                       class="icon"
+                       onclick='location.href="https://www.linkedin.com/in/britto-a-927721266/"'/>
 
-  <!-- About -->
-  <section id="about" class="fade-in">
-    <h3>About Me</h3>
-    <p>I'm Britto A, currently pursuing my B.Tech in Electronics and Communication Engineering at SRM University, Trichy with an overall CGPA of 7.8. My core interest lies in combining hardware knowledge with software solutions to build impactful projects.</p>
-  </section>
+              </div>
+              <div id="socials-container">
+                  <img src="./assets/instagram-logo.webp"
+                       alt="My instagram profile"
+                       class="icon"
+                       onclick='location.href="https://www.instagram.com/brixxo19?igsh=MXhpY2M2OHA1ajRxYg=="'/>
 
-  <!-- Skills -->
-  <section id="skills" class="fade-in">
-    <h3>Skills</h3>
-    <div class="skills-grid">
-      <div class="skill-card">C (Basics)</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">Verilog Design</div>
-      <div class="skill-card">HTML & CSS</div>
-      <div class="skill-card">UI/UX</div>
-      <div class="skill-card">Blender</div>
-      <div class="skill-card">Unity</div>
-      <div class="skill-card">Video Editing</div>
-      <div class="skill-card">Soft Skills: Adaptability, Critical Thinking</div>
-    </div>
-  </section>
+              </div>
+          </div>
+      </section>
+      <section id="about">
+          <p class="section__text__p1">Get To Know More</p>
+          <h1 class="title">About Me</h1>
+          <div class="section-container">
+              <div class="section__pic-container">
+                  <img src="./assets/WhatsApp Image 2025-05-27 at 01.26.26.jpeg"
+                       alt="Profile picture"
+                       class="about-pic" />
+              </div>
+              <div class="about-details-container">
+                  <div class="about-containers">
+                      <div class="details-container">
+                          <img src="./assets/experience.png"
+                               alt="Experience icon"
+                               class="icon" />
+                          <h3>Experience</h3>
+                          <p>8 years <br />FullStack Development</p>
+                      </div>
+                      <div class="details-container">
+                          <img src="./assets/education.png"
+                               alt="Education icon"
+                               class="icon" />
+                          <h3>Education</h3>
+                          <p>B.E Computer Science</p>
+                      </div>
 
-  <!-- Projects -->
-  <section id="projects" class="fade-in">
-    <h3>Projects</h3>
-    <div class="project">
-      <h4>Alcohol Detector</h4>
-      <p>An engine lock system using alcohol sensors to prevent drunk driving by disabling the engine when alcohol is detected.</p>
-    </div>
-    <div class="project">
-      <h4>Low-Cost Flush</h4>
-      <p>A suction-based low-water flush system for rural areas, developed for Smart India Hackathon.</p>
-    </div>
-    <div class="project">
-      <h4>SmartX Walking Stick</h4>
-      <p>A smart mobility aid for elderly Alzheimer’s patients with GPS, fall detection, and personalized reminders.</p>
-    </div>
-    <div class="project">
-      <h4>Smart Charging</h4>
-      <p>Universal charger with auto cut-off feature when the battery is full. Developed for NIT Hackathon, Karaikal.</p>
-    </div>
-  </section>
+                  </div>
+                  <div class="text-container">
+                      <p>
+                          Experienced .NET Professional with 7+ years in SDLC, specializing in Windows and Web applications.
+                          Expert in Microsoft .NET technologies, committed to high-quality results, staying current with trends,
+                          and delivering exceptional client outcomes with strong communication skills.!
+                      </p>
+                  </div>
+              </div>
+          </div>
 
-  <!-- Experience -->
-  <section id="experience" class="fade-in">
-    <h3>Experience & Certificates</h3>
-    <ul>
-      <li>2-week Internship at BSNL, Trichy (Telecommunication & Wireless Communication)</li>
-      <li>Completed Verilog Design training (Internshala)</li>
-      <li>Paper presentation at NIT Trichy</li>
-      <li>Participated in PCB Event (IIT)</li>
-      <li>Completed MATLAB Onramp Course</li>
-    </ul>
-  </section>
+      </section>
+      <section id="experience">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Work History</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">December 2017 — Augest 2024</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>DSRC - Chennai</h3>
+                                  <p>
+                                      Sr Software Engineer  & Team
+                                      Lead
+                                  </p>
+                              </div>
+                          </article>
 
-  <!-- Contact -->
-  <section id="contact" class="fade-in">
-    <h3>Get in Touch</h3>
-    <p>Feel free to reach out for collaborations, internships, or projects.</p>
-    <p>Email: <a href="mailto:brigoa004@gmail.com">brigoa004@gmail.com</a></p>
-    <p>Phone: +91 8825753668</p>
-    <p>GitHub: <a href="https://github.com/BRITTO1904">github.com/BRITTO1904</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/britto-a-927721266">linkedin.com/in/britto-a</a></p>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Britto A. All rights reserved.
-  </footer>
 
-  <script>
-    function toggleDarkMode() {
-      document.getElementById('body').classList.toggle('dark-mode');
-    }
-  </script>
+                      </div>
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">August 2015 — October 2016 </h2>
+                      <div class="article-container">
 
-</body>
+
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>
+                                      Sans
+                                      Pareil - Chennai
+                                  </h3>
+                                  <p> Trainee Programmer </p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="skills">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Skills</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Development</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>C# .NET</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>SQL</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>WPF</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>BLAZOR</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>.NET CORE</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>ANGULAR</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>SERVICES</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>HTML,CSS,JS</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+
+                      </div>
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title"> Tools</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Visual Studio</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Visual Code</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>SSMS</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Agile</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Git</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>PowerBI</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="cert">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Certifications</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Trained .Net Programmer</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3> at DSRC - Chennai </h3>
+
+                              </div>
+                          </article>
+
+
+
+                      </div>
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Application Developer </h2>
+                      <div class="article-container">
+
+
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>
+                                      at HCL - Chennai
+                                  </h3>
+
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+
+                  <div class="details-container">
+                      <h2 class="experience-sub-title"> CCNA Certification </h2>
+                      <div class="article-container">
+
+
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>
+                                      at Accord Infomatrix - Chennai
+                                  </h3>
+
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+      </section>
+      <section id="hobbies">
+          <p class="section__text__p1">My Interests </p>
+          <h1 class="title">Hobbies</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-1.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Pet Lover</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/labradorforevertamil/profilecard/?igsh=MWpnM24xNDdqbGN1cg=='">
+                              Page 1
+                          </button>
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/joe_aqua_paradise/profilecard/?igsh=MWIxZ2pvMDFpcnQ5Yw=='">
+                              Page 2
+                          </button>
+                      </div>
+                  </div>
+
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-2.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Website Devlopment</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='http://www.donboscofieldschool.com/'">
+                              Sample 1
+                          </button>
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://pawfist.com/'">
+                              Sample 2
+                          </button>
+                      </div>
+                  </div>
+
+
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-3.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Content Creation</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/reel/C_Xmgd2ya56/?igsh=OGw4eG8zdzNtZ2tk'">
+                              Sample 1
+                          </button>
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/reel/DA63agBgSSh/?igsh=MXNreWx1MnQ4bWVmOA=='">
+                              Sample 2
+                          </button>
+                      </div>
+                  </div>
+
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-4.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Video Editing</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/reel/DA09kTpi7Zs/?igsh=MW50dXVpM3RidGg5NA=='">
+                              Sample 1
+                          </button>
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/reel/C_FXU5Ryp8K/?igsh=azI0eWhjN3Nucnpw'">
+                              Sample 2
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+
+      <section id="contact">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                  <img src="./assets/email.png"
+                       alt="Email icon"
+                       class="icon contact-icon email-icon" />
+                  <p><a href="mailto:Brittoa004@gmail.com">Brittoa004@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                  <img src="./assets/linkedin.png"
+                       alt="LinkedIn icon"
+                       class="icon contact-icon" />
+                  <p><a href="https://www.linkedin.com/in/britto-a-927721266/">LinkedIn</a></p>
+              </div>
+          </div>
+      </section>
+      <footer>
+          <nav>
+              <div class="nav-links-container">
+                  <ul class="nav-links">
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#experience">Work History</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                      <li><a href="#cert">Certification</a></li>
+                      
+                      <li><a href="#hobbies">Hobbies</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <p>Copyright &#169; 2025 Britto. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+      
+  </body>
+  
 </html>
